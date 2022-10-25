@@ -70,7 +70,7 @@ public class PlayerScript : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Damage");
         }
 
-        if ((scoreValue == 4) && (collision.collider.tag == "Coin") && (livesTotal < 3))
+        if ((scoreValue == 4) && (collision.collider.tag == "Coin") && (livesTotal < 4))
         {
             transform.position = new Vector3(-31.5f,0f,0f);
             livesTotal = 3;
